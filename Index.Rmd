@@ -1,7 +1,7 @@
 ---
-title: "Presentation Ninja"
+title: "Julia's first Xaringan"
 subtitle: "⚔<br/>with xaringan"
-author: "Yihui Xie"
+author: "Julia Pieza"
 institute: "RStudio, PBC"
 date: "2016/12/12 (updated: `r Sys.Date()`)"
 output:
@@ -27,6 +27,7 @@ Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharin
 class: center, middle
 
 # xaringan
+Julia's first presentation 
 
 ### /ʃaː.'riŋ.ɡan/
 
