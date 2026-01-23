@@ -1,11 +1,12 @@
 ---
-title: "Julia's first Xaringan"
-subtitle: "⚔<br/>with xaringan"
+title: "Week 2 - LiDAR Sensor"
+subtitle: "23/01/2025"
 author: "Julia Pieza"
-institute: "RStudio, PBC"
+institute: ""
 date: "2026/01/20"
 output:
   xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -15,16 +16,18 @@ output:
 ---
 class: inverse, center, middle
 
-# Remote Sensing Week 2 Presentation
-Lidar Sensor
+# Presentation Outline
 
+.left[Summary: What is LiDAR remote sensing?]
+.left[Applications: LiDAR Sensor Uses]
+.left[Reflections: LiDAR ]
 
 ---
-class: center, middle
+class: inverse, left, top
 
-# Summary 
+## .left[What is a Lidar sensor?]
 
-What is a Lidar sensor?
+
 
 ---
 class: center, middle

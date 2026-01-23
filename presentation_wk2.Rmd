@@ -1,0 +1,331 @@
+---
+title: "Week 2 - LiDAR Presentation"
+subtitle:  
+author: 
+  - "Julia Pieza"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+# Presentation Outline
+
+##Summary
+* What is LiDAR remote sensing?
+* History of LiDAR
+* How does LiDAR work?
+
+## Applications
+* Uses of LiDAR
+* Example: 
+
+##Reflections
+
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#656176",
+  secondary_color = "#C5BADD",
+  inverse_header_color = "#FFFFFF"
+)
+```
+---
+## What is LiDAR Sensing?
+
+LiDAR stands for Light Detection and Ranging or Laser Imaging, detection and ranging. It refers to the method of remote sensing which uses a light or laser to emit pulses and measuring the time it takes for the return light to reach the sensor.
+
+This technique has uses in both satellites and ground sensors, and can even be integrated into self-driving cars!
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Starfire_Optical_Range_-_sodium_laser.jpg"
+     width="300px" height="300px"
+     style="position:absolute; right:500px; top:350px;">
+
+Source: Wikipedia
+
+---
+#History of LiDAR?
+
+* LiDAR technology was developed shortly after the invention of the laser in 1960. 
+
+* The Hughes Aircraft Company founder introduced the first LiDAR-like system in 1961, the system had the ability to calculate distances by measuring the time it took for a signal to return. 
+
+* One of the first uses of this technology were by the National Centre for Atmospheric Research to measure pollution.
+
+* Since then LiDAR has been important in space missions such as Apollo 15. Has been used by the European Space Agency and brands like Apple have developed LiDAR sensors for their iPhone 12 and later which can measure general 3D shapes.
+
+
+---
+#How does LiDAR Work?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m7SXoFv6Sdc?si=xw_umblf11meArBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+.pull-right[* LiDAR technology is an example of active sensing, meaning it must emit energy. It can use ultraviolet, visible or near-infared light to send out its signal and wait for the backscatter to return. This is often called the Time of Flight (ToF).
+
+* LiDAR scanners can generate million of points in the scans they make which are called a **'point cloud'** and can be used to generate 3D measurements of an area.
+
+* The video shows how a satellite using LiDAR is able to collect data about tree heights and generate an extremely detailed topographic picture.]
+
+.footnote[NEON Science]
+---
+
+# Applications of LiDAR
+
+.left-column[
+## Terrain Mapping
+
+## Buildings
+
+## Vehicles
+]
+
+.right-column[
+Lidar is extremely useful for surveying large areas of forests in order to measure vegetation density, and generate things like Digital Terrain Models or Digital Elevation models that have many uses in tracking things like flood risk, or monitoring coastal erosion.
+
+Lidar can also be used to gater information about building heights in urban settings, and create detailed plans of building projects for engineers.
+
+LiDAR has also been used self-driving cars and uses laser pulses to determine the environment around the car creating a 3D map. Sensors currently used by brands like Volvo are can be bulky as they have to provide a 360 view on the top of the car but they are often superior to cameras in terms of the depth perception.
+]
+
+---
+### EarthCARE’s atmospheric lidar
+
+The European Space Agency uses a high-spectral-resolution LiDAR that emits an ultraviolet wavelength laser beam to enable measurement of aerosols in clouds. 
+
+The atmospheric lidar provides a vertical resolution of 103 m from the ground up to 20 km altitude and 500 m in the range 20–40 km altitude.
+
+Over a three-year lifetime the atmospheric lidar will have generated approximately five billion laser pulses, or just over 2 minutes of laser light.
+
+
+<img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/01/earthcare_s_atmospheric_lidar_provides_cloud-top_information/25452698-1-eng-GB/EarthCARE_s_atmospheric_lidar_provides_cloud-top_information_pillars.png"
+     width="300px" height="300px"
+     style="position:absolute; right:500px; top:350px;">
+     
+---
+class: inverse, centre, middle
+
+#Reflections
+
+
+---
+# Reflections
+
+
+
+
+---
+
+### More R Code
+
+```{r eval=FALSE}
+dplyr::starwars %>% dplyr::slice_sample(n = 4)
+```
+
+---
+
+```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
+cli::cli_alert_success("It worked!")
+```
+
+--
+
+```{r message=TRUE}
+message("Just a friendly message")
+```
+
+--
+
+```{r warning=TRUE}
+warning("This could be bad...")
+```
+
+--
+
+```{r error=TRUE}
+stop("I hope you're sitting down for this")
+```
+
+
+---
+layout: true
+
+## Tables
+
+---
+exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
+
+```{r eval=requireNamespace("tibble", quietly=TRUE)}
+tibble::as_tibble(mtcars)
+```
+
+---
+
+```{r}
+knitr::kable(head(mtcars), format = 'html')
+```
+
+---
+exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
+
+```{r eval=requireNamespace("DT", quietly=TRUE)}
+DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
+```
+
+---
+layout: true
+
+## Lists
+
+---
+
+.pull-left[
+#### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+]
+
+.pull-right[
+
+#### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+]
+
+---
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+---
+
+### Nesting an ol in ul in an ol
+
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+  1. level 4 item (ol)
+  1. level 4 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+
+---
+layout: true
+
+## Plots
+
+---
+
+```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
+library(ggplot2)
+(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
+```
+
+---
+
+```{r plot-example-themed, eval=requireNamespace("showtext", quietly=TRUE) && requireNamespace("ggplot2", quietly=TRUE)}
+g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
+  ggtitle("A Plot About Cars")
+```
+
+.footnote[Requires `{showtext}`]
+
+---
+layout: false
+
+## Square image
+
+<center><img src="https://octodex.github.com/images/labtocat.png" alt="GithHub Octocat" height="400px" /></center>
+
+.footnote[GitHub Octocat]
+
+---
+
+### Wide image
+
+![A wide image with a diagram of branching in git.](https://docs.github.com/assets/images/help/repository/branching.png)
+
+.footnote[Wide images scale to 100% slide width]
+
+---
+
+## Two images
+
+.pull-left[
+![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
+]
+
+.pull-right[
+![A GitHub Octocat, style "dinotcat"](https://octodex.github.com/images/dinotocat.png)
+]
+
+---
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
