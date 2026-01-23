@@ -1,52 +1,135 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Week 2 - LiDAR Sensor</title>
+    <title>Week 2 - LiDAR Presentation</title>
     <meta charset="utf-8" />
     <meta name="author" content="Julia Pieza" />
-    <script src="libs/header-attrs-2.30/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <meta name="date" content="2026-01-23" />
+    <script src="Index_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
 .title[
-# Week 2 - LiDAR Sensor
-]
-.subtitle[
-## 23/01/2025
+# Week 2 - LiDAR Presentation
 ]
 .author[
 ### Julia Pieza
 ]
 .date[
-### 2026/01/20
+### 2026-01-23
 ]
 
 ---
 
-class: inverse, center, middle
 
 # Presentation Outline
 
-.left[Summary: What is LiDAR remote sensing?]
-.left[Applications: LiDAR Sensor Uses]
-.left[Reflections: LiDAR ]
+##Summary
+* What is LiDAR remote sensing?
+* History of LiDAR
+* How does LiDAR work?
+
+## Applications
+* Uses of LiDAR
+* Example: 
+
+##Reflections
+
+
+
 
 ---
-class: inverse, left, top
+# What is LiDAR Sensing?
 
-## .left[What is a Lidar sensor?]
+LiDAR stands for Light Detection and Ranging or Laser Imaging, detection and ranging. It refers to the method of remote sensing which uses a light or laser to emit pulses and measuring the time it takes for the return light to reach the sensor. 
 
+This technique has uses in both satellites and ground sensors, and can even be integrated into self-driving cars!
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Starfire_Optical_Range_-_sodium_laser.jpg"
+     width="300px" height="300px"
+     style="position:absolute; right:500px; top:350px;"&gt;
+
+Source: [@Wikipedia2026]
+
+---
+#History of LiDAR?
+
+* LiDAR technology was developed shortly after the invention of the laser in 1960. 
+
+* The Hughes Aircraft Company founder introduced the first LiDAR-like system in 1961, the system had the ability to calculate distances by measuring the time it took for a signal to return. @Wikipedia2026
+
+* One of the first uses of this technology were by the National Centre for Atmospheric Research to measure pollution.
+
+* Since then LiDAR has been important in space missions such as Apollo 15. Has been used by the European Space Agency and brands like Apple have developed LiDAR sensors for their iPhone 12 and later which can measure general 3D shapes.
 
 
 ---
-class: center, middle
+#How does LiDAR Work?
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/m7SXoFv6Sdc?si=xw_umblf11meArBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt; 
 
-#Application
+.pull-right[* LiDAR technology is an example of active sensing, meaning it must emit energy. It can use ultraviolet, visible or near-infared light to send out its signal and wait for the backscatter to return. This is often called the Time of Flight (ToF).
+
+* LiDAR scanners can generate million of points in the scans they make which are called a **'point cloud'** and can be used to generate 3D measurements of an area.
+
+* The video shows how a satellite using LiDAR is able to collect data about tree heights and generate an extremely detailed topographic picture.]
+
+.footnote[NEON Science]
+---
+
+# Applications of LiDAR
+
+.left-column[
+## Terrain Mapping
+
+## Buildings
+
+## Vehicles
+]
+
+.right-column[
+Lidar is extremely useful for surveying large areas of forests in order to measure vegetation density, and generate things like Digital Terrain Models or Digital Elevation models that have many uses in tracking things like flood risk, or monitoring coastal erosion.
+
+Lidar can also be used to gater information about building heights in urban settings, and create detailed plans of building projects for engineers.
+
+LiDAR has also been used self-driving cars and uses laser pulses to determine the environment around the car creating a 3D map. Sensors currently used by brands like Volvo are can be bulky as they have to provide a 360 view on the top of the car but they are often superior to cameras in terms of the depth perception.
+]
+
+---
+# EarthCARE’s atmospheric lidar
+
+The [European Space Agency](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_atmospheric_lidar) uses a high-spectral-resolution LiDAR that emits an ultraviolet wavelength laser beam to enable the measurement of atmospheric particles and investigate clouds.
+
+The ultraviolet light scatters when encounters aerosol particles and this back scattered data is collected by the received of the sensor.
+
+Over a three-year lifetime the atmospheric lidar will have generated approximately five billion laser pulses, or just over 2 minutes of laser light.
+
+
+&lt;img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/01/earthcare_s_atmospheric_lidar_provides_cloud-top_information/25452698-1-eng-GB/EarthCARE_s_atmospheric_lidar_provides_cloud-top_information_pillars.png"
+     width="300px" height="300px"
+     style="position:absolute; right:500px; top:350px;"&gt;
+     
+---
+     
+# Reflections
+
+.pull-left[Learning about the use of LiDAR sensors across various applications, and finding out how the technology has become more accessible over time. 
+
+I can see how uses of this technology in the planning sector through ground sensors which are more portable would be beneficial to architects, engineers and planners for generating 3D models of sites. 
+]
+
+---
+#References
+
+``` r
+PrintBibliography(myBib, start = 1, end = 7)
+```
+
+```
+## NULL
+```
 
 
 ---
@@ -54,9 +137,11 @@ class: center, middle
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
+  "slideNumberFormat": "%current%",
   "highlightStyle": "github",
   "highlightLines": true,
-  "countIncrementalSlides": false
+  "ratio": "16:9",
+  "countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
