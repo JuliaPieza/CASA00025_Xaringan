@@ -19,6 +19,7 @@ bibliography: wk_2_refs.bib
 ---
 ```{r include=FALSE}
 remotes::install_github("ropensci/RefManageR")
+library(knitcitations)
 library(RefManageR)
 
 BibOptions(check.entries = FALSE,
@@ -76,7 +77,11 @@ This technique has uses in both satellites and ground sensors, and can even be i
      width="300px" height="300px"
      style="position:absolute; right:500px; top:350px;">
 
-Source: [@Wikipedia2026]
+Source:
+
+```{r}
+Citet(myBib,"wulderOpeningArchiveHow2012")
+```
 
 ---
 #History of LiDAR?
@@ -147,7 +152,7 @@ I can see how uses of this technology in the planning sector through ground sens
 ---
 #References
 ```{r}
-PrintBibliography(myBib, start = 1, end = 7)
+PrintBibliography(myBib, start = 0, end = 7)
 ```
 
 
