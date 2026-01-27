@@ -17,11 +17,11 @@ bibliography: wk_2_refs.bib
 
 
 ---
-```{r include=FALSE}
+```{r, load_refs, include=FALSE, cache=FALSE}
 remotes::install_github("ropensci/RefManageR")
 library(knitcitations)
-library(RefManageR)
 
+library(RefManageR)
 BibOptions(check.entries = FALSE,
            bib.style = "authoryear",
            cite.style = "authoryear",
@@ -30,8 +30,8 @@ BibOptions(check.entries = FALSE,
            dashed = FALSE,
            no.print.fields=c("doi", "url", "urldate", "issn"))
 myBib <- ReadBib("./wk_2_refs.bib", check = FALSE)
+```   
 
-```
 # Presentation Outline
 
 ##Summary
@@ -77,12 +77,7 @@ This technique has uses in both satellites and ground sensors, and can even be i
      width="300px" height="300px"
      style="position:absolute; right:500px; top:350px;">
 
-Source:
-
-```{r}
-Citet(myBib,"wulderOpeningArchiveHow2012")
-```
-
+(Source: `r Citep(myBib, "Wikipedia2026")`)
 ---
 #History of LiDAR?
 
@@ -151,9 +146,7 @@ I can see how uses of this technology in the planning sector through ground sens
 
 ---
 #References
-```{r}
-PrintBibliography(myBib, start = 0, end = 7)
+```{r refs, echo=FALSE, results="asis", warning=FALSE, message=FALSE}
+PrintBibliography(myBib, start = 1, end = 2)
 ```
-
-
 ---
