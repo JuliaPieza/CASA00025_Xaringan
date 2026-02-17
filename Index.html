@@ -4,8 +4,10 @@
     <title>Week 2 - LiDAR Presentation</title>
     <meta charset="utf-8" />
     <meta name="author" content="Julia Pieza" />
-    <meta name="date" content="2026-01-27" />
+    <meta name="date" content="2026-02-17" />
     <script src="Index_files/header-attrs/header-attrs.js"></script>
+    <link href="Index_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="Index_files/panelset/panelset.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -19,7 +21,7 @@ class: center, middle, inverse, title-slide
 ### Julia Pieza
 ]
 .date[
-### 2026-01-27
+### 2026-02-17
 ]
 
 ---
@@ -35,7 +37,7 @@ class: center, middle, inverse, title-slide
 
 ## Applications
 * Uses of LiDAR
-* Example: 
+* Example: ESA EarthCARE Satellite
 
 ##Reflections
 
@@ -47,7 +49,7 @@ class: center, middle, inverse, title-slide
 
 LiDAR stands for Light Detection and Ranging or Laser Imaging, detection and ranging. It refers to the method of remote sensing which uses a light or laser to emit pulses and measuring the time it takes for the return light to reach the sensor. 
 
-This technique has uses in both satellites and ground sensors, and can even be integrated into self-driving cars!
+This technique has uses in both satellites and ground sensors, and has even been integrated into self-driving cars!
 
 &lt;img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Starfire_Optical_Range_-_sodium_laser.jpg"
      width="300px" height="300px"
@@ -59,7 +61,7 @@ This technique has uses in both satellites and ground sensors, and can even be i
 
 * LiDAR technology was developed shortly after the invention of the laser in 1960. 
 
-* The Hughes Aircraft Company founder introduced the first LiDAR-like system in 1961, the system had the ability to calculate distances by measuring the time it took for a signal to return. @Wikipedia2026
+* The Hughes Aircraft Company founder introduced the first LiDAR-like system in 1961, the system had the ability to calculate distances by measuring the time it took for a signal to return. (([Wikipedia contributors, 2026](#bib-Wikipedia2026)))
 
 * One of the first uses of this technology were by the National Centre for Atmospheric Research to measure pollution.
 
@@ -76,7 +78,8 @@ This technique has uses in both satellites and ground sensors, and can even be i
 
 * The video shows how a satellite using LiDAR is able to collect data about tree heights and generate an extremely detailed topographic picture.]
 
-.footnote[NEON Science]
+.footnote[]
+(&lt;a name=cite-NEONScience2024&gt;&lt;/a&gt;([Leah A. Wasser, 2024](#bib-NEONScience2024)))
 ---
 
 # Applications of LiDAR
@@ -90,38 +93,89 @@ This technique has uses in both satellites and ground sensors, and can even be i
 ]
 
 .right-column[
-Lidar is extremely useful for surveying large areas of forests in order to measure vegetation density, and generate things like Digital Terrain Models or Digital Elevation models that have many uses in tracking things like flood risk, or monitoring coastal erosion.
+LiDAR is extremely useful for surveying large areas of forests in order to measure vegetation density, and generate things like Digital Terrain Models or Digital Elevation models that have many uses in tracking things like flood risk, or monitoring coastal erosion.
 
-Lidar can also be used to gater information about building heights in urban settings, and create detailed plans of building projects for engineers.
+LiDAR can also be used to gater information about building heights in urban settings, and create detailed plans of building projects for engineers.
 
 LiDAR has also been used self-driving cars and uses laser pulses to determine the environment around the car creating a 3D map. Sensors currently used by brands like Volvo are can be bulky as they have to provide a 360 view on the top of the car but they are often superior to cameras in terms of the depth perception.
 ]
 
 ---
-# EarthCARE’s atmospheric lidar
+# Applications: EarthCARE’s atmospheric LiDAR
 
-The [European Space Agency](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_atmospheric_lidar) uses a high-spectral-resolution LiDAR that emits an ultraviolet wavelength laser beam to enable the measurement of atmospheric particles and investigate clouds.
+.panelset[
+.panel[.panel-name[EarthCare LiDAR background]
+* The European Space Agency's EarthCARE (Earth Cloud, Aerosol and Radiation Explorer) mission launched on 28 May 2024.
 
-The ultraviolet light scatters when encounters aerosol particles and this back scattered data is collected by the received of the sensor.
+* Launched in partnership between the ESA and JAXA (Japanese Aerospace Exploration Agency) this mission aims to collect information on the role of clouds and aerosols and their effects on the Earth and our climate.
+]
 
-Over a three-year lifetime the atmospheric lidar will have generated approximately five billion laser pulses, or just over 2 minutes of laser light.
+.panel[.panel-name[LiDAR mechanisms]
+* The EarthCare Satellite carries 4 key instruments which enable it to collect data -  the Atmospheric Lidar (ATLID), the Broadband Radiometer (BBR), the Cloud Profiling Radar (CPR), and the Multispectral Imager (MSI) 
+
+* The [European Space Agency](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_atmospheric_lidar) uses the Atmospheric Lidar that emits an ultraviolet wavelength laser beam to enable the measurement of atmospheric particles and investigate clouds.
+
+* The ultraviolet light scatters when encounters aerosol particles and this back scattered data is collected by the received of the sensor.
+
+]
+
+
+.panel[.panel-name[Orbital information]
+
+* Operates at a wavelenght of 355nm 
+
+* The atmospheric lidar provides a vertical resolution of 103 m from the ground up to 20 km altitude and 500 m in the range 20–40 km altitude.
+
+* Over a three-year lifetime the atmospheric lidar will have generated approximately five billion laser pulses, or just over 2 minutes of laser light.(&lt;a name=cite-ESA2026&gt;&lt;/a&gt;([European Space Agency, 2026](#bib-ESA2026)))
+
+]
+
+.panel[.panel-name[Recent Applications]
+* In September 2025 the [EarthCARE satellite](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_lifts_the_clouds_on_climate_models) collected images over Typhoon Ragasa near the Philippines. It was able to create a detailed picture of cloud properties such as water content.
+
+* Using this data to improve our ability to model the atmosphere, scientists can better understand the impact of greenhouse gas aerosols on clouds.
+
+* The 3D cloud representation created by the LiDAR scanner is also useful in monitoring how sunlight is scattered and how it may be interacting with aerosols in the atmosphere.
+]
+
+]
 
 
 &lt;img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/01/earthcare_s_atmospheric_lidar_provides_cloud-top_information/25452698-1-eng-GB/EarthCARE_s_atmospheric_lidar_provides_cloud-top_information_pillars.png"
-     width="300px" height="300px"
-     style="position:absolute; right:500px; top:350px;"&gt;
+     width="250px" height="250px"
+     style="position:absolute; right:850px; top:430px;"&gt;
      
+&lt;img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/05/earthcare_sticker_on_the_rocket/26112076-1-eng-GB/EarthCARE_sticker_on_the_rocket_pillars.jpg"
+  width="250px" height="250px"
+      style="position:absolute; right:150px; top:430px;"&gt;
+
+&lt;img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2013/12/artist_s_view_of_earthcare2/13465854-2-eng-GB/Artist_s_view_of_EarthCARE_pillars.jpg"
+  width="250px" height="250px"
+      style="position:absolute; right:510px; top:430px;"&gt;
+
 ---
      
 # Reflections
 
-.pull-left[Learning about the use of LiDAR sensors across various applications, and finding out how the technology has become more accessible over time. 
 
-I can see how uses of this technology in the planning sector through ground sensors which are more portable would be beneficial to architects, engineers and planners for generating 3D models of sites. 
-]
+I've enjoyed reading and learning more about the many applicatiosn of LiDAR sensors, from electric vehicles, to environmental monitoring, and uses in urban space scanning. I have 3 key reflections from this LiDAR research exercise: 
+
+* I think the amount of data produced in a 'point cloud' poses certain challenges given the millions of data points collected so it will be interesting to learn more about Google Earth Engine and how it can cope with these amounts of data. 
+
+* It is also interesting to see how the technology has become more accessible, with some basic incorporation into iPhones, and the ability to purchase or rent LiDAR scanners for a couple hundred pounds. I think this technology has extremely wide ranging applications and I'd be interested to see how it can be combined with other satellite data, or vector data to make it even more useful.
+
+* In relation to my current work in Local Government, I can see how uses of this technology in the planning sector through LiDAR ground sensors which are more portable would be beneficial to architects, engineers and planners for generating 3D models of sites.
+
 
 ---
 #References
+&lt;a name=bib-ESA2026&gt;&lt;/a&gt;[European Space Agency](#cite-ESA2026) (2026).
+_EarthCARE’s atmospheric lidar_. Accessed 30 January 2026.
+
+&lt;a name=bib-NEONScience2024&gt;&lt;/a&gt;[Leah A. Wasser](#cite-NEONScience2024)
+(2024). _The Basics of LiDAR - Light Detection and Ranging - Remote
+Sensing_. Accessed 30 January 2026.
+
 &lt;a name=bib-Wikipedia2026&gt;&lt;/a&gt;[Wikipedia
 contributors](#cite-Wikipedia2026) (2026). _LiDAR_. Accessed 23 January
 2026.
