@@ -136,9 +136,9 @@ LiDAR has also been used self-driving cars and uses laser pulses to determine th
 ]
 
 .panel[.panel-name[LiDAR mechanisms]
-* The EarthCare Satellite carries 4 key instruments which enable it to collect data -  the Atmospheric Lidar (ATLID), the Broadband Radiometer (BBR), the Cloud Profiling Radar (CPR), and the Multispectral Imager (MSI) 
+* The EarthCare Satellite carries 4 key instruments which enable it to collect data -  the Atmospheric LiDAR (ATLID), the Broadband Radiometer (BBR), the Cloud Profiling Radar (CPR), and the Multispectral Imager (MSI) 
 
-* The [European Space Agency](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_atmospheric_lidar) uses the Atmospheric Lidar that emits an ultraviolet wavelength laser beam to enable the measurement of atmospheric particles and investigate clouds.
+* The [European Space Agency](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_atmospheric_lidar) uses the Atmospheric LiDAR that emits an ultraviolet wavelength laser beam to enable the measurement of atmospheric particles and investigate clouds.
 
 * The ultraviolet light scatters when encounters aerosol particles and this back scattered data is collected by the received of the sensor.
 
@@ -149,7 +149,7 @@ LiDAR has also been used self-driving cars and uses laser pulses to determine th
 
 * Operates at a wavelenght of 355nm 
 
-* The atmospheric lidar provides a vertical resolution of 103 m from the ground up to 20 km altitude and 500 m in the range 20–40 km altitude.
+* The atmospheric LiDAR provides a vertical resolution of 103 m from the ground up to 20 km altitude and 500 m in the range 20–40 km altitude.
 
 * Over a three-year lifetime the atmospheric lidar will have generated approximately five billion laser pulses, or just over 2 minutes of laser light.(`r Citep(myBib, "ESA2026")`)
 
