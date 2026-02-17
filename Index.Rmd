@@ -47,6 +47,7 @@ xaringanExtra::use_panelset()
 * Example: ESA EarthCARE Satellite
 
 ##Reflections
+* Key reflections
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
